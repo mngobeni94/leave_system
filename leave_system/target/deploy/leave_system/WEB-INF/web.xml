@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0">
+	<welcome-file-list>
+		<welcome-file>/WEB-INF/index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>AddUserJSPServlet</servlet-name>
+		<jsp-file>/WEB-INF/add.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>ViewResultsJSPServlet</servlet-name>
+		<jsp-file>/WEB-INF/results.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>AddUserServlet</servlet-name>
+		<servlet-class>leave.system.AddEmployeeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>IndexJSPServlet</servlet-name>
+		<jsp-file>/WEB-INF/index.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>ApplyLeaveJSPServlet</servlet-name>
+		<jsp-file>/WEB-INF/apply.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>ApplyLeaveServlet</servlet-name>
+		<servlet-class>leave.system.ApplyLeaveServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HistoryServlet</servlet-name>
+		<servlet-class>leave.system.ViewHistoryServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmployeeListServlet</servlet-name>
+		<servlet-class>leave.system.EmployeesServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>HistoryJSP</servlet-name>
+		<jsp-file>/WEB-INF/history.jsp</jsp-file>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>EmployeeListServlet</servlet-name>
+		<url-pattern>/employees</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HistoryServlet</servlet-name>
+		<url-pattern>/historyServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>HistoryJSP</servlet-name>
+		<url-pattern>/history</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddUserJSPServlet</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>ViewResultsJSPServlet</servlet-name>
+		<url-pattern>/results</url-pattern>
+	</servlet-mapping>
+
+	
+	<servlet-mapping>
+		<servlet-name>AddUserServlet</servlet-name>
+		<url-pattern>/addUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>IndexJSPServlet</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ApplyLeaveJSPServlet</servlet-name>
+		<url-pattern>/leaveApplication</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ApplyLeaveServlet</servlet-name>
+		<url-pattern>/leaveApplicationServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>employeeListJSP</servlet-name>
+		<jsp-file>/WEB-INF/employeeList.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>employeeListJSP</servlet-name>
+		<url-pattern>/employeeList</url-pattern>
+	</servlet-mapping>
+</web-app>

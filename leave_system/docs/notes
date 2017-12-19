@@ -1,0 +1,2 @@
+Date converting in java.
+(Date) new SimpleDateFormat("yyyy-MM-dd").parse()
